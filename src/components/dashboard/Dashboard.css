@@ -1,0 +1,25 @@
+#dashboard {}
+#dashboard .profile-img {
+	border: 3px solid #ff9770;
+	display:block;
+	width:125px;
+}
+#dashboard .top-bar {
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+#dashboard .profile-box {
+	
+}
+#dashboard select {
+	padding:3px;
+	border-radius: 2px;
+	border: 1px solid #ccc3c3;
+}
+#dashboard .rec-title {
+	justify-content: space-between;
+	align-items: top;
+}
+#dashboard .rec-title h3 {
+	margin: 0;
+}
