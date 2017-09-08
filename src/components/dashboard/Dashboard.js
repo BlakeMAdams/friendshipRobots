@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
 import Header from '../header/Header';
+import { Link } from 'react-router-dom';
 
 export default class Dashboard extends Component {
 
@@ -18,7 +19,7 @@ export default class Dashboard extends Component {
 							<div>
 								<h2>{/* bring in values from reducer */}Fname</h2>
 								<h2>{/* bring in values from reducer */}Lname</h2>
-								<a><button className="grey-button raise">Edit Profile</button></a>
+								<Link to="/editprofile"><button className="grey-button raise">Edit Profile</button></Link>
 							</div>
 						</div>
 						<div className="content col-60">

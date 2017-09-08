@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 
 export default class Home extends Component {
@@ -17,7 +18,7 @@ export default class Home extends Component {
 							Helo
                             </div>
 						<div className="login-button-container">
-							<a href="#"><button className="login-button raise">Login / Register</button></a>
+						<Link to={process.env.REACT_APP_LOGIN}><button className="login-button raise">Login / Register</button></Link>
 						</div>
 					</div>
 				</div>
