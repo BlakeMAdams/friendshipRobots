@@ -1,0 +1,50 @@
+.profileProfile {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0 20px 0;
+  }
+  .profileImg {
+	height: 160px;
+	width: 160px;
+	border: 1.5px solid #ff9770;
+  }
+  .nameBox {
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 0 20px;
+  }
+  .nameBox h2 {
+	margin: 5px 0 5px 0;
+  }
+  .profileInfo {
+	width: 100%;
+	justify-content: space-around;
+  }
+  .infoInput {
+	border: 1.5px solid #ff9770;
+	height: 30px;
+  }
+  select {
+	height: 35px;
+  }
+  .infoLeft {
+	width: 35%;
+	flex-direction: column;
+	margin: 0 0 60px 0;
+  }
+  .infoRight {
+	width: 35%;
+	flex-direction: column;
+  }
+  .profileUpdate {
+	border-radius: 1px;
+	background-image: radial-gradient(circle at 50% -46%, #737373, #403d39);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0rgba 0, 0, 0, 0.2;
+	border: none;
+  }
+  .profileCancel {
+	border-radius: 1px;
+	background-image: radial-gradient(circle at 50% 0, #ffffff, #f1eceb);
+	border: solid 1px #ccc3c3;
+  }

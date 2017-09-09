@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Header.css';
 import homeIcon from '../../img/home.png';
 import searchIcon from '../../img/search.png';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
 
@@ -12,14 +13,14 @@ export default class Header extends Component {
 					<header>
 						<nav>
 							<h1>Helo</h1>
-							<a href="/home"><img src={homeIcon} alt="Home" /></a>
-							<a href="/search"><img src={searchIcon} alt="Search" /></a>
+							<Link to="/home"><img src={homeIcon} alt="Home" /></Link>
+							<Link to="/search"><img src={searchIcon} alt="Search" /></Link>
 						</nav>
 						<div>
 							<h3>{this.props.pageTitle}</h3>
 						</div>
 						<div>
-							<a href="/logout"><h4>Logout</h4></a>
+							<Link to={process.env.REACT_APP_LOGOUT}><h4>Logout</h4></Link>
 						</div>
 					</header>
 				</div >
