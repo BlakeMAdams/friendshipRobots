@@ -65,7 +65,7 @@ passport.serializeUser(function(user, done) {
 //USER COMES FROM SESSION - THIS IS INVOKED FOR EVERY ENDPOINT
 passport.deserializeUser(function(user, done){
   done(null, userInfo) //PUTS ON req.user
-}));
+});
 
 //SET UP OUR ENDPOINTS (NEED 4 ENDPOINT PER OUR DESIGN)
 //ENDPOINT #1 - AUTHORIZATION ENDPOINTS

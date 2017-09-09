@@ -12,7 +12,7 @@ export default class Home extends Component {
 				<div className="central-login">
 					<div className="login-container">
 						<div className="logo">
-							<img src="https://raw.githubusercontent.com/DevMountain/simulation-3/master/assets/logo.png" />
+							<img src="https://raw.githubusercontent.com/DevMountain/simulation-3/master/assets/logo.png" alt=""/>
 						</div>
 						<div className="helo">
 							Helo
