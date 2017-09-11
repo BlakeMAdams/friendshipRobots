@@ -73,7 +73,7 @@ app.get('/api/auth/login', passport.authenticate('auth0'));
 
 //ENDPOINT #2 - AUTHORIZATION ENDPOINT
 app.get('/api/auth/setUser', passport.authenticate('auth0', {
-   successRedirect: 'http://localhost:3000/#/private',
+   successRedirect: 'http://localhost:3000/#/dashboard',
    failureRedirect: 'http://localhost:3000/#/'
  }));
 
