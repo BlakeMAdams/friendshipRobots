@@ -20,7 +20,7 @@ export default class Header extends Component {
 							<h3>{this.props.pageTitle}</h3>
 						</div>
 						<div>
-							<Link to={process.env.REACT_APP_LOGOUT}><h4>Logout</h4></Link>
+							<a href={process.env.REACT_APP_LOGOUT}><h4>Logout</h4></a>
 						</div>
 					</header>
 				</div >

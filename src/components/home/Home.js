@@ -18,7 +18,7 @@ export default class Home extends Component {
 							Helo
                             </div>
 						<div className="login-button-container">
-						<Link to={process.env.REACT_APP_LOGIN}><button className="login-button raise">Login / Register</button></Link>
+						<a href={process.env.REACT_APP_LOGIN}><button className="login-button raise">Login / Register</button></a>
 						</div>
 					</div>
 				</div>
