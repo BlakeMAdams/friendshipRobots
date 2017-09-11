@@ -19,8 +19,8 @@ export default class EditProfile extends Component {
 							</div>
 						</div>
 						<div className="profileButtonBox flex">
-							<a href=""><button className="profileUpdate raise">Update</button></a>
-							<a href=""><button className="profileCancel raise">Cancel</button></a>
+							<Link to=""><button className="profileUpdate raise">Update</button></Link>
+							<Link to=""><button className="profileCancel raise">Cancel</button></Link>
 						</div>
 					</div>
 					<div className="profileInfo content flex">

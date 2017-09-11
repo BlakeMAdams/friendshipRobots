@@ -39,12 +39,12 @@ passport.use(new Auth0Strategy({
   const db = app.get('db');
   db.find_user(profile.id).then( user => {
     console.log(user);
-    if(user[0]) {
+    if(user) {
       return done(null, user);
     } else {
       db.create_user([profile.displayName, profile.emails[0].value,
       profile.picture, profile.id]).then(user => {
-        return done(null, user[0]);
+        return done(null, user);
       })
     }
   })
@@ -72,7 +72,7 @@ passport.deserializeUser(function(user, done){
 app.get('/api/auth/login', passport.authenticate('auth0'));
 
 //ENDPOINT #2 - AUTHORIZATION ENDPOINT
-app.get('/api/auth/setUser', passport.authenticate('auth0', {
+app.get('/api/auth/callback', passport.authenticate('auth0', {
    successRedirect: 'http://localhost:3000/#/dashboard',
    failureRedirect: 'http://localhost:3000/#/'
  }));
